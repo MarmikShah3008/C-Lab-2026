@@ -4,7 +4,7 @@ int main(){
 // simple interest = principal amount * rate of interest * time period in years
 int p, r, t;
 
-printf("Enter the oignal amount : ");
+printf("Enter the orignal amount : ");
 scanf("%d", &p);
 
 printf("Enter the rate of interest: ");
