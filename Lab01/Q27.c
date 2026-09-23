@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 int main(){
 
-    int a, t;
+    int a, t, number;
     printf(" Enter any digit: ");
     scanf("%d", &a);
 
@@ -10,12 +11,22 @@ int main(){
 
     else
     {
-        for(int i = 2; i <= a/2; i++)
+        for(int i = 2; i <= sqrt(a); i++)
+        {
         t = a % i;
         if(t == 0)
-        printf("The number is not prime\n");
+        {
+            number = 0;
+            break;
+        }
         else
-        printf("The number is prime\n");
+        number = 1;
+        }
+
+        if (number == 0)
+        printf("The number is not prime");
+        else
+        printf("The number is prime");
     }
     return 0;
 }
